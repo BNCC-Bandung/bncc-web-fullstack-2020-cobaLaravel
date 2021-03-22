@@ -11,7 +11,7 @@
     <!-- FORM -->
     <!-- ACTION FORM NGARAH KE ROUTE  -->
     <form name="signup-form" method="POST" action="{{url('/welcome')}}" >
-      @csrf  
+      @csrf
       <h4 class="form-title">Sign Up Form</h4>
 
       <!-- FIRST NAME -->

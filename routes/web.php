@@ -13,8 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@home');
+// Tugas 12
+// Route::get('/', 'HomeController@home');
 
 Route::get('/register', 'AuthController@register');
 
 Route::post('/welcome', 'AuthController@welcome');
+
+//Tugas 13
+Route::get('/', function(){
+    return view('task13.taskTable');
+});
+
+Route::get('/data-table', function(){
+    return view('task13.dataTable');
+});

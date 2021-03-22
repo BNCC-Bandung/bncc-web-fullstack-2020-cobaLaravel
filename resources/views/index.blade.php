@@ -21,7 +21,7 @@
     <h2>Cara Bergabung ke BNCCBook</h2>
     <ol>
         <li>Mengunjungi Website ini</li>
-        <li>Mendaftar di <a href="register">Form Sign Up</a></li>
+        <li>Mendaftar di <a href="{{url('register')}}">Form Sign Up</a></li>
         <li>Selesai</li>
     </ol>
   </body>
