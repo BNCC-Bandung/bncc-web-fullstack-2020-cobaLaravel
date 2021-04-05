@@ -20,7 +20,7 @@ Route::get('/register', 'AuthController@register');
 
 Route::post('/welcome', 'AuthController@welcome');
 
-//Tugas 13
+// Tugas 13
 Route::get('/', function(){
     return view('task13.taskTable');
 });
@@ -28,3 +28,12 @@ Route::get('/', function(){
 Route::get('/data-table', function(){
     return view('task13.dataTable');
 });
+
+// Tugas 14
+Route::get('/pertanyaan', 'PertanyaanController@index');
+Route::get('/pertanyaan/create','PertanyaanController@create');
+Route::get('/pertanyaan/{pertanyaan_id}', 'PertanyaanController@show');
+Route::get('/pertanyaan/{pertanyaan_id}/edit', 'PertanyaanController@edit');
+Route::post('/pertanyaan', 'PertanyaanController@store');
+Route::put('/pertanyaan/{pertanyaan_id}','PertanyaanController@update');
+Route::delete('/pertanyaan/{pertanyaan_id}','PertanyaanController@destroy');

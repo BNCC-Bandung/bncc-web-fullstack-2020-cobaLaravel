@@ -18,7 +18,7 @@ class CreatePertanyaanTable extends Migration
             $table->string('judul',45);
             $table->string('isi',255);
 
-            $table->unsignedBigInteger('profil_id');
+            $table->unsignedBigInteger('profil_id')->nullable();
             $table->unsignedBigInteger('jawaban_tepat_id')->nullable();
             $table->timestamps();
 
