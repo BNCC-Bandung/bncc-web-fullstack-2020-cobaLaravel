@@ -30,10 +30,13 @@ Route::get('/data-table', function(){
 });
 
 // Tugas 14
-Route::get('/pertanyaan', 'PertanyaanController@index');
-Route::get('/pertanyaan/create','PertanyaanController@create');
-Route::get('/pertanyaan/{pertanyaan_id}', 'PertanyaanController@show');
-Route::get('/pertanyaan/{pertanyaan_id}/edit', 'PertanyaanController@edit');
-Route::post('/pertanyaan', 'PertanyaanController@store');
-Route::put('/pertanyaan/{pertanyaan_id}','PertanyaanController@update');
-Route::delete('/pertanyaan/{pertanyaan_id}','PertanyaanController@destroy');
+// Route::get('/pertanyaan', 'PertanyaanController@index');
+// Route::get('/pertanyaan/create','PertanyaanController@create');
+// Route::get('/pertanyaan/{pertanyaan_id}', 'PertanyaanController@show');
+// Route::get('/pertanyaan/{pertanyaan_id}/edit', 'PertanyaanController@edit');
+// Route::post('/pertanyaan', 'PertanyaanController@store');
+// Route::put('/pertanyaan/{pertanyaan_id}','PertanyaanController@update');
+// Route::delete('/pertanyaan/{pertanyaan_id}','PertanyaanController@destroy');
+
+// Tugas 15
+Route::resource('/pertanyaan', 'PertanyaanController');
