@@ -14,4 +14,16 @@ class Pertanyaan extends Model
     ];
 
     protected $hidden = [];
+
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
+
+    public function tags(){
+        return $this->belongsToMany('App\Tag','question_tags','question_id','tag_id');
+    }
+
+    public function answer(){
+        return $this->hasOne('App\Jawaban');
+    }
 }

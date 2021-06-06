@@ -40,3 +40,6 @@ Route::get('/data-table', function(){
 
 // Tugas 15
 Route::resource('/pertanyaan', 'PertanyaanController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
